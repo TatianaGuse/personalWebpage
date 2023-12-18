@@ -1,0 +1,551 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+  }
+  
+  /* ===Title Section=== */
+
+  #header {
+    display: flex;
+    position: relative;
+    background-image: url(/./Banner_klein.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 9vh;
+    width: 100%;
+    height: 85vh;
+  }
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height:130vh;
+    margin-top: 50vh;
+    z-index: 2;
+  }
+
+  #my-text {
+    display:flex;
+    padding-top: 25vh;
+    margin-left: 50%;
+    margin-bottom: 15vh;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: #547881;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+  }
+  
+  .char {
+    transform: translateX(-115px);
+    transition: transform 0.5s;
+  }
+
+  /* ===Navigation Bar=== */
+  
+  .navbar {
+    padding: 0.5rem 1rem;
+    background-color: #547881;
+  }
+  
+  .nav-item a {
+   padding-right: 20px;  
+  }
+  
+  .svg-inline--fa:hover {
+    color: #3a5258;
+  }
+
+  .navbar-toggler {
+    padding-right: 1rem; 
+  }
+
+  /* ===My Profile=== */
+  
+  #myProfile {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #547881; 
+    z-index: 10;
+  }
+
+  .container-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 400px;
+    padding-bottom: 20px;
+  }
+
+  .open-popup {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: none;
+    color: #547881;
+    font-size: 28px;
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 300px;
+    min-width: 100px;
+    -webkit-box-shadow: 0 10px 6px -6px #2f3031;
+    -moz-box-shadow: 0 10px 6px -6px #2f3031;
+         box-shadow: 0 10px 6px -6px #2f3031;
+  }
+
+  .open-popup:hover {
+    height: 80px;
+    width: 350px;
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+/* ===Social Media=== */
+
+#socialMedia {
+position: relative;
+width: 30%;
+height: 110px;
+margin: 30px auto;
+z-index: 10;
+background-color: transparent;
+ }
+
+#SMicons{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ } 
+ #SMicons a {
+  padding-right: 20px;
+ }
+
+/* ===Adding Pop-up=== */
+
+.popup {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.close:hover,
+.close:focus {
+  color:black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-header {
+  padding: 2px 16px;
+  background-color: #547880;
+  color: #fff;
+}
+
+
+.popup-content {
+  position: relative;
+  background-color: #f5f4f0;
+  margin: auto;
+  padding: 0;
+  border: none;
+  width: 60%;
+  height: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 1.5s;
+}
+
+ @keyframes animatetop {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+ }
+
+ /* ===Pop-up About=== */
+
+ .popup-header{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+ .popup-body-about {
+  background-image: url(/./TGsite.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 533.5px;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+ }
+
+ .popup-body-about p {
+  color: #fff;
+  margin-right: 60%;
+  margin-top: 0;
+ }
+
+ .popup-body-about p span {
+  color:#547881;
+  font-size: 30px;
+  font-weight: 900;
+ }
+
+
+ /* ===Pop-up Portfolio=== */
+
+ .popup-body-profile {
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding-top: 65px;
+  }
+
+.swiper {
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 300px;
+    background-color: #547881;
+ }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  background-position: cover;
+ }
+
+.swiper-slide .text {
+  padding: 10px 0;
+  text-align: center;
+ }
+
+.swiper-slide .text .title {
+  color:#fff;
+ }
+
+.swiper-slide .text a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #fff;
+  border: none;
+  color:#547881;
+  margin-top: 5px;
+  padding: 10px 20px;
+    -webkit-box-shadow: 0 10px 6px -6px #2f3031;
+    -moz-box-shadow: 0 10px 6px -6px #2f3031;
+         box-shadow: 0 10px 6px -6px #2f3031;
+}
+
+.swiper-slide .text a:hover {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.swiper-pagination {
+  color: #547881 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  border-radius: 0;
+  border: 2px solid #547881;
+}
+
+.swiper-pagination-bullet-active {
+background-color: #547881;
+}
+
+ /* ===Pop-up Contact=== */
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 533.5px;
+  box-sizing: border-box;
+}
+
+form {
+ background: #f5f4f0;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.message-icon{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.message-icon i {
+  font-size: 30px;
+  color: #547881;
+}
+
+.message-icon span {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 15px;
+  color: #547881;
+}
+
+form input, textarea {
+  background-color: #f5f4f0;
+  width:80%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #547881;
+  outline: none;
+}
+
+#input-field {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#input-field i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.btn-contact{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border: none;
+  background-color: #547881;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 300px;
+  min-width: 100px;
+  -webkit-box-shadow: 0 10px 6px -6px #2f3031;
+  -moz-box-shadow: 0 10px 6px -6px #2f3031;
+       box-shadow: 0 10px 6px -6px #2f3031;
+}
+
+.btn-contact:hover {
+  font-size: 24px;
+  font-weight: 900;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* ===Footer=== */
+
+.legal {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  height: 50px;;
+  color: #547881;
+}
+
+.legal a {
+  display:flex;
+  text-decoration: none;
+  color: #547881;
+  z-index: 5;
+}
+
+.legal a:hover {
+  display:flex;
+  text-decoration: none;
+  color: #3a5258;
+}
+
+ /* ===Responsive Design=== */
+ @media all and (max-width: 1350px){
+  .popup-body-about {
+    background-image: url(/./TGsite.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 540px;
+    padding-left:20px;
+  }
+
+.popup-content {
+  width: 60%;
+  background-color: #595957;
+}
+  .popup-body-about p {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top:50%;
+}
+}
+
+@media all and (max-width: 700px) {
+  #my-text {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5rem;
+  }
+
+  #my-text h1 {
+  font-size: 2.5rem;
+  color:#f5f4f0;
+  text-align: center;
+  }
+  
+  .popup-content {
+    width: 100%;
+    background-color: #595957;}
+  
+   .popup-body-about {
+    background-image: url(/./TGsite.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+   }
+  
+  .popup-body-about p {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top:50%;
+}
+}
+
+@media all and (max-width: 500px) {
+  #header {
+    margin-top: 7.1vh;
+  }
+
+  #my-text {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 2rem;
+  }
+
+  #my-text h1 {
+  font-size: 2.5rem;
+  color:#f5f4f0;
+  text-align: center;
+  }
+
+ .popup-content {
+    width: 100%;
+    background-color: #595957;
+  }
+
+  .popup-body-about {
+    background-image: url(/./TGsite.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 540px;
+    padding: 0;
+   }
+  
+   .popup-body-about p {
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top:40%;
+   }
+  
+   .popup-body-about p span {
+    color:#547881;
+    font-size: 30px;
+    font-weight: 900;
+   }
+
+  .popupContact {
+    margin: 0;
+  }
+  
+  #popupContact .contact {
+    background-color: #f5f4f0;
+  }
+  .legal{
+    font-size: 12px;
+  }
+  }
+
+@media all and (max-width: 320px) {
+  #header {
+    margin-top: 5vh;
+  }
+  
+  .popup-body-about {
+  background-image: url(/./TGsite.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+  
+  .open-popup {
+    width: 150px;
+    font-size: 20px;
+  }
+  
+  .popup-content {
+  width: 100%;
+  background-color: #595957;
+}
+}
